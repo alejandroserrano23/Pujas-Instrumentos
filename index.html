@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subasta de instrumentos</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <h1>eBay Instruments</h1>
+  <div id="auction-container">
+    <div id="instruments">
+      <div class="instrument">
+        <img src="violin.jpg" alt="Violin">
+        <div class="bid-controls">
+          <button onclick="placeBid(1)">Pujar</button>
+        </div>
+      </div>
+      <div class="instrument">
+        <img src="guitarra.png" alt="Guitarra">
+        <div class="bid-controls">
+          <button onclick="placeBid(2)">Pujar</button>
+        </div>
+      </div>
+      <div class="instrument">
+        <img src="trompeta.jpg" alt="Trompeta">
+        <div class="bid-controls">
+          <button onclick="placeBid(3)">Pujar</button>
+        </div>
+      </div>
+    </div>
+    <div id="bid-input-container">
+      <p>Quiero pujar con la cantidad de:</p>
+      <input type="number" id="custom-bid-input" placeholder="Cantidad">
+    </div>
+    <div id="bids-container">
+      <div id="my-bids">
+        <h2>Mis pujas</h2>
+        <ul id="bids-list"></ul>
+      </div>
+      <div id="highest-bid-container">
+        <h2>Puja más alta</h2>
+        <p id="highest-bid"></p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
